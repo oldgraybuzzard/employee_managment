@@ -1,0 +1,26 @@
+{
+  "name": "employee_managment",
+  "version": "1.0.0",
+  "description": "Application used to  document, track and update workforce employees",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oldgraybuzzard/employee_managment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oldgraybuzzard/employee_managment/issues"
+  },
+  "homepage": "https://github.com/oldgraybuzzard/employee_managment#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "inquirer": "^8.2.0",
+    "jest": "^27.3.1",
+    "mysql2": "^2.3.2"
+  }
+}
