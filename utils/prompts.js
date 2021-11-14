@@ -1,6 +1,5 @@
 const { prompt } = require("inquirer");
-const db = require('../db/connection');
-const apiRoutes = require('../db/index');
+const db = require('../db/index');
 
 init();
 
@@ -180,11 +179,16 @@ function createEmployee() {
         {
             name: "last_name",
             message: "What's the employee's last name?"
+        },
+        {
+            name: "email",
+            message: "What's the employee's email address?"
         }
     ])
         .then(res => {
             let firstName = res.first_name;
             let lastName = res.last_name;
+            let email = res.email;
 
             db.allRoles()
                 .then(([rows]) => {
@@ -224,7 +228,8 @@ function createEmployee() {
                                                 manager_id: res.managerId,
                                                 role_id: roleId,
                                                 first_name: firstName,
-                                                last_name: lastName
+                                                last_name: lastName,
+                                                email: email
                                             }
 
                                             db.addEmployee(employee);
@@ -246,7 +251,7 @@ function updateEmployeeRole() {
     db.allEmployees()
         .then(([rows]) => {
             let employees = rows;
-            const employeeChoices = employees.map(({ id, first_name, last_name }) => ({
+            const employeeChoices = employees.map(({ id, first_name, last_name, email }) => ({
                 name: `${first_name} ${last_name}`,
                 value: id
             }));

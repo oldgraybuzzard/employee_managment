@@ -10,7 +10,18 @@ const db = mysql.createConnection(
       password: 'sCJAF5rSy9z0kd4SELWu',
       database: 'employee_management'
     },
-    console.log('Connected to the employee management database.')
+    
+    console.log('Connected to the employee management database.'),
+    console.log('-----------------------------------------------'),
+    console.log('|                                             |'),
+    console.log('|                                             |'),
+    console.log('|                                             |'),
+    console.log('|              EMPLOYEE MANAGER DB            |'),
+    console.log('|                                             |'),
+    console.log('|                                             |'),
+    console.log('|                                             |'),
+    console.log('-----------------------------------------------'),
   );
+
 
   module.exports = db;
