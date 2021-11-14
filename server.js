@@ -10,8 +10,7 @@ const app = express();
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-
-//turn on routes
+-
 // Use apiRoutes
 app.use('/api', apiRoutes);
 
