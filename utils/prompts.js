@@ -1,4 +1,6 @@
 const { prompt } = require("inquirer");
+const db = require('../db/connection');
+const apiRoutes = require('../db/index');
 
 init();
 

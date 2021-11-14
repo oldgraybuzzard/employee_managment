@@ -4,7 +4,7 @@ const db = require('../../db/connection');
 
  //Get all employees
     router.get('/employees', (req, res) => {
-        const sql = `SELECT employee.id, employee.first_name, employee.last_name, role.title, department.name
+        const sql = `SELECT employee.id, employee.first_name, employee.last_name, employee.email, role.title, department.name
                     AS department, role.salary, CONCAT(manager.first_name, ' ', manager.last_name)
                     AS manager
                     FROM employee
@@ -40,9 +40,9 @@ const db = require('../../db/connection');
 
 // Add an employee
     router.post('/employee', ({ body }, res) => {
-      const sql = `INSERT INTO employee (first_name, last_name, role_id, manager_id)
-        VALUES (?,?,?,?)`;
-      const params = [body.first_name, body.last_name, body.role_id, body.manager_id];
+      const sql = `INSERT INTO employee (first_name, last_name, email, role_id, manager_id)
+        VALUES (?,?,?,?,?,?)`;
+      const params = [body.first_name, body.last_name, body.email, body.role_id, body.manager_id];
 
       db.query(sql, params, (err, result) => {
         if (err) {
@@ -56,9 +56,9 @@ const db = require('../../db/connection');
       });
     }); 
 
-// Update the employee's role
+// Update the employee
     router.put('/employee/:id', (req, res) => {
-      const sql = `UPDATE employee SET role_id = ?
+      const sql = `UPDATE employee SET role_id = ?, SET email = ?, SET manager_id = ?, SET department_id = ?
                   WHERE id = ?`
       const params = [req.body.role_id, req.params,id];
       db.query(sql, params, (err, result) => {

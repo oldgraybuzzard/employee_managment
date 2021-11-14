@@ -1,4 +1,7 @@
 const connection = require("./connection");
+// const employeeTable = require('../routes/apiRoutes/employeeRoutes');
+// const roleTable = require('../routes/apiRoutes/roleRoutes');
+// const departmentTable = require('../routes/apiRoutes/departmentRoutes');
 
 class employeeManagementDb {
 
