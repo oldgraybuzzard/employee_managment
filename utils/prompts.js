@@ -84,10 +84,9 @@ function runPrompts() {
     )
 }
 
-
 // View all employees
 function viewAllEmployees() {
-    db.allEmployees()
+    db.getAllEmployees()
         .then(([rows]) => {
             let employees = rows;
             console.log("\n");
@@ -244,8 +243,6 @@ function createEmployee() {
         })
 }
 
-
-
 // Update an employee's role
 function updateEmployeeRole() {
     db.allEmployees()
@@ -291,5 +288,9 @@ function updateEmployeeRole() {
 }
 //Quit the application
 function quit() {
+    console.log('Database disconnect confirmed!');
+    console.log('==============================')
+    console.log('Goodbye!');
     process.exit();
+    
 }
