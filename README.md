@@ -21,7 +21,7 @@ View walk through video here - https://watch.screencastify.com/v/
 ![Initial DB View](https://github.com/oldgraybuzzard/employee_managment/blob/main/assets/images/Initial%20view%20of%20employee_management%20db.PNG)
 ![View All Departments](https://github.com/oldgraybuzzard/employee_managment/blob/main/assets/images/viewing%20departments.PNG)
 ![View All Roles](https://github.com/oldgraybuzzard/employee_managment/blob/main/assets/images/viewing%20roles.PNG)
-![View All Employees(https://github.com/oldgraybuzzard/employee_managment/blob/main/assets/images/viewing%20all%20employees.PNG)
+![View All Employees](https://github.com/oldgraybuzzard/employee_managment/blob/main/assets/images/viewing%20all%20employees.PNG)
 
 ## License 
 This project is license under MIT
