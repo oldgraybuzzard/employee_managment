@@ -17,7 +17,7 @@ The user should clone the repository from GitHub and download Node. This applica
 
 ## Usage 
 Use inquirer from your command line to answer questions about your employees.
-View walk through video here - https://watch.screencastify.com/v/
+View walk through video here - https://watch.screencastify.com/v/RukQ8MVZzfYScCmTaEF4
 
 * Initial DB View
 - ![Initial DB View](https://github.com/oldgraybuzzard/employee_managment/blob/main/assets/images/Initial%20view%20of%20employee_management%20db.PNG)
