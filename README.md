@@ -26,7 +26,7 @@ View walk through video here - https://watch.screencastify.com/v/
 * View All Roles
 - ![View All Roles](https://github.com/oldgraybuzzard/employee_managment/blob/main/assets/images/viewing%20roles.PNG)
 * View All Employees
--![View All Employees](https://github.com/oldgraybuzzard/employee_managment/blob/main/assets/images/viewing%20all%20employees.PNG)
+- ![View All Employees](https://github.com/oldgraybuzzard/employee_managment/blob/main/assets/images/viewing%20all%20employees.PNG)
 
 ## License 
 This project is license under MIT
