@@ -206,7 +206,7 @@ function createEmployee() {
                         .then(res => {
                             let roleId = res.roleId;
 
-                            db.allEmployees()
+                            db.getAllEmployees()
                                 .then(([rows]) => {
                                     let employees = rows;
                                     const managerChoices = employees.map(({ id, first_name, last_name }) => ({
@@ -245,7 +245,7 @@ function createEmployee() {
 
 // Update an employee's role
 function updateEmployeeRole() {
-    db.allEmployees()
+    db.getAllEmployees()
         .then(([rows]) => {
             let employees = rows;
             const employeeChoices = employees.map(({ id, first_name, last_name, email }) => ({
